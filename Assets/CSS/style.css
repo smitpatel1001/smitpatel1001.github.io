@@ -1,16 +1,23 @@
-h1{background-color: teal;
+h1 {
+    background-color: teal;
     color: red;
     text-align: center;
+    text-transform: uppercase;
 }
 
-#head{
+#head {
     color: aliceblue;
     background-color: black;
     font-size: 34px;
 }
 
-.font-pink{
+.font-pink,
+a {
     color: rgb(67, 40, 45);
+    text-decoration-line: overline;
+    text-decoration-style: dashed;
+    text-decoration-color: rgb(60, 105, 145);
+    text-transform: lowercase;
 }
 
 body {
