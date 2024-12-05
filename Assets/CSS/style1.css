@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #708090; 
+    --secondary-color: #F8F8FF;
+    --accent-color: #FFF8DC; 
+    --background-color:  #F0F8FF; 
+    --text-color: #36454F; 
+}
+html body, html body button, html body input, html body textarea, html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body p, html body a, html body .btn, html body .navbar, html body .nav-link, html body {
+    font-family: 'Georgia', serif !important;
+}
+
+/* General body styles */
+body {
+    font-family: 'Georgia', serif; /* Changed to Georgia */
+    line-height: 1.6;
+    padding-top: 70px; /* Padding to ensure content isn't hidden behind fixed navbar */
+    background-color: var(--background-color); /* Using root variable */
+    color: var(--text-color); /* Using root variable */
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--primary-color); /* Using root variable */
+    font-size: 20px;
+}
+
+.nav-link {
+    color: var(--background-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 25px; /* Set your desired font size */
+    color: var(--accent-color) !important; /* Ensuring the color stands out, if needed */
+}
+
+
+
+.hamburger {
+    border: none !important;
+}
+/* Home section styles */
+#home {
+    min-height: 100vh;
+    background-color: var(--secondary-color); /* Changed to secondary color */
+    color: var(--text-color);
+    text-align: center;
+    padding: 40px 0;
+}
+
+.display-4 {
+    color: var(--primary-color); /* Changed to primary color */
+}
+
+/* Section styles */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background: var(--background-color); /* White replaced with variable */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+}
+.card-subtitle {
+    font-size: 1.3rem;
+}
+.card-text {
+    font-size: 1.25rem;
+}
+
+/* Headings within sections */
+h1, h2 {
+    color: var(--primary-color);
+}
+
+/* Unordered list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.dl-font {
+    font-size: larger;
+}
+
+/* About Section */
+#about p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Contact section styling */
+#contact a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+dl.row {
+    margin-top: 0;
+    background: var(--secondary-color); /* Light grey replaced with variable */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+    padding-bottom: 10px;
+}
+
+ul.list-unstyled {
+    padding-left: 20px;
+}
+
+ul.list-unstyled li {
+    padding-bottom: 5px;
+}
+
+#contact .list-group-item {
+    display: flex;
+    align-items: center;
+}
+
+#contact .fa {
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+}
+
+.list-group-item img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-brand, .nav-link {
+        font-size: 16px;
+    }
+
+    body {
+        padding-top: 150px;
+    }
+
+    #home {
+        background-attachment: scroll;
+        background-position: top;
+    }
+
+    #home .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
